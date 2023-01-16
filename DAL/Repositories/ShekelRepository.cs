@@ -9,9 +9,9 @@ namespace ShekelAPI.DAL.Repositories
 {
     public class ShekelRepository : IShekelRepository
     {
-        private readonly ShekelDbContext _context;
+        private readonly IShekelDbContext _context;
 
-        public ShekelRepository(ShekelDbContext context)
+        public ShekelRepository(IShekelDbContext context)
         {
             _context = context;
         }
